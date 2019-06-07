@@ -1,0 +1,21 @@
+{
+  "name": "rxjsdemo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server"
+  },
+  "author": "Brice Wilson",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "5.3.3",
+    "ts-node": "8.0.2",
+    "typescript": "3.3.3",
+    "webpack": "4.29.3",
+    "webpack-cli": "3.2.3",
+    "webpack-dev-server": "3.1.14"
+  },
+  "dependencies": {
+    "rxjs": "^6.4.0"
+  }
+}

@@ -1,7 +1,8 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule, RouterLink } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -24,11 +25,7 @@ import { MessageModule } from './messages/message.module';
     ProductModule,
     UserModule,
     MessageModule,
-    RouterModule.forRoot([
-      {path: 'welcome', component: WelcomeComponent},
-      {path: '', redirectTo: 'welcome', pathMatch: 'full' },
-      {path: '**', component: PageNotFoundComponent}
-    ])
+    AppRoutingModule
     // { useHash: true } after the array, if we want to use hash based routing
   ],
   declarations: [

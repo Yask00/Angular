@@ -19,7 +19,7 @@ export class AppComponent {
     return this.authService.isLoggedIn;
   }
 
-  isMessageDisplayed(): boolean {
+  get isMessageDisplayed(): boolean {
     return this.messageService.isDisplayed;
   }
 
@@ -53,11 +53,7 @@ export class AppComponent {
   }
 
   displayMessages(): void {
-    this.router.navigate([{
-      outlets: { popup: [
-        'messages'
-      ]}
-    }]);
+    this.router.navigate([{ outlets: { popup: ['messages'] } }]);
     this.messageService.isDisplayed = true;
   }
 

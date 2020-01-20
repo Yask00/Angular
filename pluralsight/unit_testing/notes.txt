@@ -9,6 +9,10 @@ There are three types of automated testing
     Integration tests (aka Functional)
         More than a unit but less than application
         Make sure that certain part of the application works with another part
+        SHALLOW
+            testing only one component
+        DEEP
+            testing the components and child components ect
 
 Mocking
     Important concept in unit testing
@@ -40,3 +44,6 @@ Structuring Unit test
         Arrange all necessary preconditions andi nputs
         Act on the object or class under test
         Assert that the expected results have occured
+
+Shallow integration tests
+    TestBed allows us to test together the component and its template

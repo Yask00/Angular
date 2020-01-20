@@ -16,7 +16,6 @@ import { ProductEditGuard } from './product-edit/product-edit.guard';
   imports: [
     SharedModule,
     RouterModule.forChild([
-
       {
         path: '',
         component: ProductListComponent

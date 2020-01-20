@@ -1,0 +1,42 @@
+THIS COURSE WILL NOT COVER E2E tests
+
+There are three types of automated testing
+    Unit tests
+        Done against single unit of code
+    End to End tests
+        Done against live running app
+        Automating the browser (click buttons, type form fields)
+    Integration tests (aka Functional)
+        More than a unit but less than application
+        Make sure that certain part of the application works with another part
+
+Mocking
+    Important concept in unit testing
+    Making sure that we are testing only single unit of code at a time
+    User component and User Service
+        We dont want to use the real user service
+        We want to test the component only
+        We need to drawn boundary around the unit === with mocks
+    Mock is a class that looks like the real one, but we modify it
+    TYPES OF MOCKS
+        Dummies - just objects filling space, use on the place of the real one
+        Stub - object that has controllable behavior, if we call a 
+                method on a stub we can decide what will return
+        Spies - object that keeps track of which methods were called (how many times)
+                and what parameters were used for each call
+
+Types of Unit test in angular
+    Isolated
+    Intergration
+        In the context of angular module
+
+Tools for angular unit tests
+    KARMA - test runner exercising our test in a browser
+    JASMINE - Tool to create mocks 
+    OTHERS - Jest, Mocha/Chai (Jasmine replacement), Sinon (Mocking library), Wallaby (code coverage)
+
+Structuring Unit test
+    AAA pattern
+        Arrange all necessary preconditions andi nputs
+        Act on the object or class under test
+        Assert that the expected results have occured

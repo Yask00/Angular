@@ -1,3 +1,4 @@
+import { trigger } from '@angular/animations';
 import { HeroesComponent } from "./heroes.component";
 import { of } from "rxjs";
 import { HeroComponent } from "../hero/hero.component";
@@ -56,7 +57,8 @@ describe("HeroesComponent (Deep tests)", () => {
         // dig down to child
         const heroComponents = fixture.debugElement.queryAll(By.directive(HeroComponent));
         // heroComponents[0].query(By.css('button')).triggerEventHandler('click', { stopPropagation: () => { } });
-        (<HeroComponent>heroComponents[0].componentInstance).delete.emit(undefined); // telling the child to raise event
+        // (<HeroComponent>heroComponents[0].componentInstance).delete.emit(undefined); // telling the child to raise event
+        heroComponents[0].triggerEventHandler('delete', null);
 
         expect(fixture.componentInstance.delete).toHaveBeenCalledWith(HEROES[0]);
     })

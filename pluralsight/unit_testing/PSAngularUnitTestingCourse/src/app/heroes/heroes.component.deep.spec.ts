@@ -52,9 +52,11 @@ describe("HeroesComponent (Deep tests)", () => {
         mockHeroService.getHeroes.and.returnValue(of(HEROES))
         // run ngOnInit:
         fixture.detectChanges();
+
         // dig down to child
         const heroComponents = fixture.debugElement.queryAll(By.directive(HeroComponent));
-        heroComponents[0].query(By.css('button')).triggerEventHandler('click', { stopPropagation: () => { } });
+        // heroComponents[0].query(By.css('button')).triggerEventHandler('click', { stopPropagation: () => { } });
+        (<HeroComponent>heroComponents[0].componentInstance).delete.emit(undefined); // telling the child to raise event
 
         expect(fixture.componentInstance.delete).toHaveBeenCalledWith(HEROES[0]);
     })

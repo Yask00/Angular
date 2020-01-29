@@ -41,9 +41,12 @@ Tools for angular unit tests
 
 Structuring Unit test
     AAA pattern
-        Arrange all necessary preconditions andi nputs
+        Arrange all necessary preconditions and inputs
         Act on the object or class under test
         Assert that the expected results have occured
 
 Shallow integration tests
     TestBed allows us to test together the component and its template
+
+Integration test for service
+    Reason for that is http calls, we need to mock it

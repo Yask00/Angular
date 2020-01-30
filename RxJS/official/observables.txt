@@ -1,0 +1,22 @@
+Observables are lazy Push collections of multiple values.
+
+---Pull versus Push---
+
+Pull and Push are two different protocols that describe how a data Producer 
+can communicate with a data Consumer.
+
+RxJS introduces Observables, a new Push system for JavaScript. 
+An Observable is a Producer of multiple values, "pushing" them to Observers (Consumers).
+
+-A Function is a lazily evaluated computation that synchronously returns a single value on invocation.
+-A generator is a lazily evaluated computation that synchronously returns zero to (potentially) 
+    infinite values on iteration.
+-A Promise is a computation that may (or may not) eventually return a single value.
+-An Observable is a lazily evaluated computation that can synchronously or asynchronously 
+    return zero to (potentially) infinite values from the time it's invoked onwards.
+
+---Anatomy of Observables---
+1. Creating Observables
+2. Subscribing to Observables
+3. Executing Observables (next, error, complete)
+4. Disposing Observable Executions (unsubscribe)

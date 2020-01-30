@@ -1,0 +1,9 @@
+An RxJS Subject is a special type of Observable that allows values to be multicasted to many Observers
+Subjects are like EventEmitters: they maintain a registry of many listeners.
+
+There are also a few specializations of the Subject type: 
+BehaviorSubject, ReplaySubject, and AsyncSubject.
+
+---Multicasted Observables---
+A multicasted Observable uses a Subject under the hood to make multiple Observers 
+see the same Observable execution.

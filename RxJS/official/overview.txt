@@ -1,0 +1,15 @@
+RxJS is a library for composing asynchronous and event-based programs by using observable sequences.
+It provides one core type, the Observable, satellite types (Observer, Schedulers, Subjects) and 
+operators inspired by Array#extras (map, filter, reduce, every, etc) to allow handling asynchronous 
+events as collections.
+
+ReactiveX combines the 
+    Observer 
+pattern with the 
+    Iterator pattern and 
+    functional programming 
+with collections to fill the need for an ideal way of managing sequences of events.
+
+The observer pattern is a software design pattern in which an object, called the subject, maintains a
+list of its dependents, called observers, and notifies them automatically of any state changes, 
+usually by calling one of their methods.

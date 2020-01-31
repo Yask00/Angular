@@ -1,0 +1,3 @@
+Observable is wrapper over stream of data/values sync/async
+Observer executes code when we receive a value from Observable throught subscription
+    next, error, complete
